@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Rajdhani&display=swap");
 
 body {
-  font-family: Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   background-color: #000000;
   display: grid;
