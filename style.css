@@ -5,7 +5,7 @@ body {
   margin: 0px;
   background-color: #000000;
   display: grid;
-  gap: 20px;
+  gap: 15px;
   justify-items: center;
 }
 
