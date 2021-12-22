@@ -3,7 +3,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background-color: #000000;
+  background-color: #ebe7e7;
   display: grid;
   gap: 15px;
   justify-items: center;
@@ -18,24 +18,10 @@ body {
 .titulo {
   color: rgb(191, 133, 245);
   font-family: "Orbitron", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
-  text-shadow: rgb(61, 61, 61) 0em 0em 0.2em;
-  animation: glow 1s ease-in-out infinite alternate;
   grid-column: 1 / 3;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px rgb(100, 98, 98), 0 0 7px rgb(100, 98, 98),
-      0 0 10px #8154ca, 0 0 13px #8154ca, 0 0 16px #8154ca, 0 0 20px #8154ca,
-      0 0 25px #8154ca;
-  }
-  to {
-    text-shadow: 0 0 7px rgb(100, 98, 98), 0 0 11px rgb(100, 98, 98),
-      0 0 14px #a576f0, 0 0 18px #a576f0, 0 0 23px #a576f0, 0 0 28px #a576f0,
-      0 0 35px #a576f0;
-  }
+  font-weight: bold;
 }
 
 .gridmenu {
@@ -50,12 +36,14 @@ body {
 
 .menu {
   text-decoration: none;
-  color: #aca9a9;
-  background-color: #220e25;
+  color: #220e25;
+  background-color: #d3d3d3;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .vazio2 {
@@ -64,22 +52,50 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  padding: 10px 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 40px;
+  max-width: 1000;
 }
 
 p {
   font-size: 20px;
+  line-height: 1.3;
 }
 
 .info {
-  background-color: #e0e0e0;
-  place-items: end;
-  grid-column: 1;
-  max-width: 100%;
+  display: grid;
+  gap: 20px;
+  background-color: #d3d3d3;
+  justify-items: end;
   font-size: 20px;
   line-height: 1.3;
+  padding: 40px;
+  text-align: right;
+  align-content: center;
+  position: relative;
 }
+
+.barrinha {
+  width: 70px;
+  height: 4px;
+  background-color: rgb(180, 115, 241);
+  position: absolute;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: rgb(218, 185, 218) 0em 0em 0.2em;
+  right: -35px;
+  top: 30px;
+}
+/* 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #8154ca, 0 0 13px #8154ca, 0 0 16px #8154ca,
+      0 0 20px #8154ca, 0 0 25px #8154ca;
+  }
+  to {
+    text-shadow: 0 0 14px #a576f0, 0 0 18px #a576f0, 0 0 23px #a576f0,
+      0 0 28px #a576f0, 0 0 35px #a576f0;
+  }
+} */
 
 .subtitulo {
   text-align: end;
@@ -94,38 +110,23 @@ p {
 
 .comprar {
   text-decoration: none;
-  color: #000000;
-  background-color: #810000;
+  color: rgb(191, 133, 245);
+  background-color: #220e25;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 20px;
   text-align: center;
-  font-weight: bold;
+  text-transform: uppercase;
 }
-/* 
-.destaque {
-  grid-column: 2;
-} */
-
-/* .preco {
-  background-color: #5f5e5e;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 16px;
-  color: #000000;
-  font-weight: bold;
-  position: relative;
-  top: 25px;
-} */
 
 .bikepreta {
   max-width: 100%;
-  grid-column: 2 / 3;
+  /* grid-column: 2 / 3; */
   display: block;
 }
 
 .beneficios {
-  grid-column: 1;
+  /* grid-column: 1; */
   background-color: rgb(53, 51, 51);
   font-family: "Orbitron", sans-serif;
   font-size: 20px;
@@ -134,15 +135,19 @@ p {
 }
 
 .vantagens {
-  grid-column: 2;
-  background-color: #e0e0e0;
+  /* grid-column: 2; */
+  background-color: #d3d3d3;
   color: #220e25;
+}
+
+h3 {
+  color: rgb(185, 118, 248);
 }
 
 .footer {
   margin: 0px;
   padding: 5px;
-  background-color: #e0e0e0;
+  background-color: #d3d3d3;
   text-align: center;
   font-family: "Orbitron", sans-serif;
   color: #220e25;
